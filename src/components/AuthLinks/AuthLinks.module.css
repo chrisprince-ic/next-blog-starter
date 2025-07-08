@@ -1,0 +1,44 @@
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 1em;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.burger {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.2em;
+    border-radius: 0.1em;
+  z-index: 10;
+}
+
+.menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width:70vw;
+  height: 85vh;
+  gap:2em;
+  font-size: 24px;
+
+}
+

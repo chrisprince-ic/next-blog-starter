@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2em 0;
+}
+
+.container .social{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex:1;
+  
+}
+.container .links{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex:1;
+    
+}
+.container .logo{
+    font-size: 36px;
+    font-weight:bold;
+      flex:1;
+    text-align: center;
+}
+.container .logo span{
+    color:#154be7;
+    
+}
+.container .link{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex:1;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 767px) {
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    
+}
+.container .link{
+    display: none;
+   
+}
+.container .logo{
+    font-size: 20px;
+    text-align: left;
+}
+  /* Styles for all phones */
+  .container .social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 2em;
+    left: 1em;
+  }
+}
