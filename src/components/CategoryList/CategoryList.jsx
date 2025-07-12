@@ -30,7 +30,10 @@ const CategoryList = () => {
             <Image className={styles.image} src='/culture.png' alt='Style' width={32} height={32} />
             Culture
           </Link>
-        
+        <Link href='/blog' className={`${styles.category} ${styles.culture}`}>
+            <Image className={styles.image} src='/coding.png' alt='Style' width={32} height={32} />
+            Coding
+          </Link>
       </div>
     </div>
   )
