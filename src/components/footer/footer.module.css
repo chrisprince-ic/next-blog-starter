@@ -1,0 +1,137 @@
+.footer {
+  color: var(--text-color);
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 3px solid #ccc;
+  margin-top: 3em;
+  
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerSection {
+  flex: 1 1 220px;
+}
+
+.logo{
+    font-size: 36px;
+    font-weight:bold;
+      flex:1;
+    text-align: start;
+}
+.logo span{
+    color:crimson;
+    
+}
+
+.footerText {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: --var(--soft-text-color);
+}
+
+.footerSection h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: --var(--soft-text-color);;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 8px;
+}
+
+.footerSection ul li a {
+  color: --var(--soft-text-color);;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerSection ul li a:hover {
+  color: crimson;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletterForm input {
+  padding: 8px;
+  flex: 1;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+.newsletterForm button {
+   padding: 0.5em 1em;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+
+    background-color:rgb(97, 94, 94);
+    
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletterForm button:hover {
+  background-color: #bababa;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: --var(--soft-text-color);;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: crimson;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: --var(--soft-text-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerSection {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .socialIcons {
+    justify-content: center;
+  }
+}
