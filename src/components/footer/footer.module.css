@@ -135,3 +135,111 @@
     justify-content: center;
   }
 }
+
+
+/* Media query for smaller screens (tablets and below) */
+@media only screen and (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(15px, 3vw, 20px);
+    }
+
+    .footerSection {
+        margin-bottom: clamp(15px, 3vw, 20px);
+        text-align: center;
+        flex: 1 1 100%; /* Full width */
+    }
+
+    .logo {
+        font-size: clamp(20px, 5vw, 24px); /* Smaller logo */
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .newsletterForm {
+        flex-direction: column; /* Stack input and button */
+        align-items: center;
+    }
+
+    .newsletterForm input,
+    .newsletterForm button {
+        width: 100%; /* Full width */
+        max-width: 300px; /* Limit max width */
+    }
+}
+
+/* Media query for very small screens (small mobiles) */
+@media only screen and (max-width: 480px) {
+    .footer {
+        padding: clamp(15px, 4vw, 20px) clamp(8px, 2vw, 10px);
+    }
+
+    .footerText,
+    .footerSection h3,
+    .footerSection ul li a {
+        font-size: clamp(0.75rem, 1.8vw, 0.85rem); /* Smaller text */
+    }
+
+    .newsletterForm input,
+    .newsletterForm button {
+        padding: clamp(5px, 1.2vw, 7px);
+        font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+    }
+
+    .socialIcons a {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .footerBottom {
+        font-size: clamp(0.7rem, 1.6vw, 0.8rem);
+    }
+}
+
+/* Media query for larger screens (desktops) */
+@media only screen and (min-width: 1200px) {
+    .footer {
+        padding: 40px 20px 20px; /* Restore original padding */
+    }
+
+    .footerContainer {
+        gap: 40px; /* Restore original gap */
+    }
+
+    .logo {
+        font-size: 36px; /* Restore original size */
+    }
+
+    .footerText,
+    .footerSection ul li a {
+        font-size: 0.95rem; /* Restore original size */
+    }
+
+    .footerSection h3 {
+        font-size: 1.1rem; /* Restore original size */
+    }
+
+    .newsletterForm input {
+        padding: 8px; /* Restore original padding */
+    }
+
+    .newsletterForm button {
+        padding: 0.5rem 1rem; /* Restore original padding */
+    }
+
+    .socialIcons {
+        gap: 15px; /* Restore original gap */
+    }
+
+    .socialIcons a {
+        font-size: 1.2rem; /* Restore original size */
+    }
+
+    .footerBottom {
+        margin-top: 30px; /* Restore original margin */
+        font-size: 0.85rem; /* Restore original size */
+    }
+}

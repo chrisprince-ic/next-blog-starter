@@ -1,13 +1,75 @@
-.container{
+.container {
     flex: 5;
-    
-}
-.posts{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
-.title{
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.title {
     font-weight: bold;
-    margin: 1em 0;
+    margin: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Mobile screens (up to 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        flex: 1;
+        padding: 0.5rem;
+    }
+
+    .posts {
+        gap: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin: 0.75rem 0;
+    }
+}
+
+/* Tablet screens (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        flex: 4;
+        padding: 1rem;
+    }
+
+    .posts {
+        gap: 1.75rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        margin: 0.875rem 0;
+    }
+}
+
+/* Desktop screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .container {
+        flex: 5;
+        padding: 1.5rem;
+    }
+
+    .posts {
+        gap: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
 }
