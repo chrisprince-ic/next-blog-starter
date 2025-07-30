@@ -7,7 +7,7 @@ const commentSection = () => {
     <div>
           <h1>Comment</h1>
           <div className={styles.commenttext}>
-            <input type="message" placeholder='Write a comment...' className={styles.commentInput} />
+            <input type="message" placeholder="Write a comment..." className={styles.commentInput} />
             <button className={styles.commentButton}>Send</button>  
           </div>
           {status === "authenticated" ? (
